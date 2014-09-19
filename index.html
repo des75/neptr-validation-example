@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+  	<title>Test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no' />
+    <meta charset='utf-8'>
+    
+    <meta name="description" content="">
+  	<meta name="keywords" content="">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/tooltips.css">
+  </head>
+  <body>    
+    <div class='width'>
+    
+    <form id='exampleForm' action='/test' method='POST'>
+      <label>Name:</label><br>
+      <input type='text' name='name' id='name'><br>
+      <a href='#' class='tooltip-helper' data-tooltip='Полное имя должно состоять из 2 или более слов, разделенных пробелом'>show comment</a><br><br>
+
+      <label>Email:</label><br>
+      <input type='text' name='email' id='email'><br>
+      <a href='#' class='tooltip-helper' data-tooltip='Адрес электронной почты в формате username@domain'>show comment</a><br><br>
+
+      <label>About:</label><br>
+      <textarea name='about' id='about'></textarea><br>
+      <a href='#' class='tooltip-helper' data-tooltip='Ваши комментарии, минимум 30 символов'>show comment</a><br><br>
+
+      <label>Option 1:</label><br>
+      <input type='checkbox' name='opt1' id='opt1'>
+      <label for='opt1'> < this </label><br>
+      <a href='#' class='tooltip-helper' data-tooltip='У этого чекбокса особенное сообщение об ошибке: оно показывается слева, и иначе выглядит'>show comment</a><br><br>
+
+      <label>Option 2:</label><br>
+      <input type='checkbox' name='opt2' id='opt2'>
+      <label for='opt2'> < this </label><br>
+      <a href='#' class='tooltip-helper' data-tooltip='Это очень важный чекбокс, если его не включить, ничего не произойдет'>show comment</a><br><br>
+
+      <label>Option 3:</label><br>
+      <input type='checkbox' name='opt3' id='opt3'>
+      <label for='opt3'> < this </label><br>
+      <a href='#' class='tooltip-helper' data-tooltip='А этот чекбокс никто не проверяет'>show comment</a><br><br>
+
+
+      <button type="submit">Отправить</button>
+    </form> 
+
+  </div>
+
+
+  </body>
+
+  <script type='text/javascript' src='js/jquery.js'></script>
+  <script type='text/javascript' src='js/neptr-tooltip.js'></script>
+  <script type='text/javascript' src='js/neptr-validation.js'></script>
+
+  <script type='text/javascript' src='js/example.js'></script>
+</html>
