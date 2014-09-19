@@ -12,6 +12,12 @@ $(function(){
                 rules: ['required', 'is_email'],
                 messages: ['Введите email адрес', 'Введите корректный email адрес']
             },
+            '#gender': {
+                rules: ['required', function(){
+                    return this.val == 'male';
+                }],
+                messages: ['Выберите пол', 'Укажите свой настоящий пол']
+            },
             '#about': {
                 rules: 'minlength:30',
                 messages: 'Минимальная длина сообщения 30 символов'                
